@@ -142,3 +142,73 @@ nav ul > li {
   border-radius: 50%;
   left: 22px;
 }
+
+/* mobile responsive styles */
+
+@media screen and (max-width:576px) {
+  .header{
+    padding: 50px 20px;
+  }
+  nav{
+    background-image: url("../asset/menu.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+  }
+  nav > ul{
+    display: none;
+  }
+  nav h2{
+    margin-bottom: 50px;
+  }
+  nav h2,
+  .banner-section h1{
+    font-size: 2rem;
+  }
+  #shape-text{
+    font-size: 4rem;
+    line-height: 1px;
+  }
+  .banner-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .banner-info{
+    padding: 0;
+    margin-bottom: 45px;
+  }
+  .banner-join-btn,
+  .download-app-btn{
+    margin-bottom: 20px;
+}
+  .free-workout-video{
+    width: 145px;
+    height: 74px;
+    top: 50px;
+    left: 200px;
+  }
+  
+.video-tutorial{
+  height: 72px;
+  width: 155px;
+  top: 260px;
+  left: 0px;
+}
+.free-workout-video h2{
+  font-size: 1.875rem;
+  font-weight: 900;
+}
+.free-workout-video p{
+  font-size: .5625rem;
+  color: rgba(255, 255, 255, 0.65);
+}
+.video-tutorial h2{
+  font-size: 1.125rem;
+  font-weight: 900;
+}
+.video-tutorial p{
+  font-size: 0.75rem;
+}
+
+}
