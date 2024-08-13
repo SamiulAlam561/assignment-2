@@ -57,7 +57,6 @@ main {
 .training-img-description{
   font-size: 0.875rem;
   font-weight: 500;
-  color: #fff;
 }
 /* nav styles */
 nav {
@@ -269,7 +268,7 @@ nav ul > li {
   content: '';
   width: 529px;
   height: 100%;
-  left: 338px;
+  left: 28.1%;
   top: 0;
   background-color: rgba(255, 0, 0, 0.3);
 }
@@ -283,7 +282,7 @@ nav ul > li {
   content: '';
   width: 28%;
   height: 100%;
-  left: 867px;
+  left: 72.1%;
   top: 0;
   background-color: rgba(0, 0, 0, 0.5);
 }
@@ -456,6 +455,7 @@ nav ul > li {
 
   .training-container{
     padding: 20px;
+    margin-bottom: 50px;
   }
   .training-info{
     margin-bottom: 38px;
@@ -470,15 +470,18 @@ nav ul > li {
     position: relative;
     grid-template-columns: repeat(2, 1fr);
   }
+  .training-img-description{
+    font-size: .6rem;
+  }
   .text-1{
     position: absolute;
-    top: 120px;
-    left: 20px;
+    top: 70%;
+    left: 2%;
   }
   .filter-1{
     position: absolute;
     content: '';
-    width: 240.5px;
+    width: 50%;
     height: 100%;
     left: 0;
     top: 0;
@@ -487,15 +490,15 @@ nav ul > li {
 
   .text-2{
     position: absolute;
-    top: 125px;
-    left: 250px;
+    top: 74%;
+    left: 55%;
   }
   .filter-2{
     position: absolute;
     content: '';
-    width: 240.5px;
+    width: 50%;
     height: 100%;
-    left: 240.5px;
+    left: 50%;
     top: 0;
     background-color: rgba(255, 0, 0, 0.3);
   }
@@ -506,13 +509,13 @@ nav ul > li {
   }
   .text-4{
     position: absolute;
-    left: 10px;
-    top: 120px;
+    top: 70%;
+    left: 2%;
   }
   .filter-4{
     position: absolute;
     content: '';
-    width: 240.5px;
+    width: 50%;
     height: 100%;
     left: 0px;
     top: 0;
@@ -520,17 +523,22 @@ nav ul > li {
   }
 
   .text-5{
-    position: absolute;
-    left: 260px;
-    top: 100px;
+    position: absolute;    
+    top: 70%;
+    left: 52%;
   }
   .filter-5{
     position: absolute;
     content: '';
-    width: 240.5px;
+    width: 50%;
     height: 100%;
-    left: 241px;
-    top: 0;
+    left: 50%;
     background-color: rgba(66, 255, 0, 0.3);
   }
+
+  /* bmi section styles */
+  .bmi{
+    padding: 20px;
+  }
+
 }
