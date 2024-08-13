@@ -53,6 +53,12 @@ main {
   font-weight: 600;
   margin-bottom: 6px;
 }
+
+.training-img-description{
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #fff;
+}
 /* nav styles */
 nav {
   display: flex;
@@ -221,6 +227,123 @@ nav ul > li {
   left: -780px;
 }
 
+/* training section styles starts here*/
+
+.training-container{
+  padding: 100px 190px;
+}
+.training-info{
+  margin-bottom: 58px;
+}
+.training-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.training-img .row-1{
+  display: grid;
+  grid-template-columns: 1fr 530px 1fr;
+  position: relative;
+}
+.text-1{
+  position: absolute;
+  top: 220px;
+  left: 30px;
+}
+.filter-1{
+  position: absolute;
+  content: '';
+  width: 28%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(6, 255, 210, 0.5);
+}
+.text-2{
+  position: absolute;
+  top: 235px;
+  left: 390px;
+}
+.filter-2{
+  position: absolute;
+  content: '';
+  width: 529px;
+  height: 100%;
+  left: 338px;
+  top: 0;
+  background-color: rgba(255, 0, 0, 0.3);
+}
+.text-3{
+  position: absolute;
+  top: 230px;
+  left: 900px;
+}
+.filter-3{
+  position: absolute;
+  content: '';
+  width: 28%;
+  height: 100%;
+  left: 867px;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.training-img .row-2{
+  display: grid;
+  grid-template-columns: 425px 1fr 1fr;
+  position: relative;
+}
+.text-4{
+  position: absolute;
+  left: 20px;
+  top: 200px;
+}
+.filter-4{
+  position: absolute;
+  content: '';
+  width: 425px;
+  height: 100%;
+  left: 0px;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.text-5{
+  position: absolute;
+  left: 500px;
+  top: 200px;
+}
+.filter-5{
+  position: absolute;
+  content: '';
+  width: 32.3%;
+  height: 100%;
+  left: 425px;
+  top: 0;
+  background-color: rgba(66, 255, 0, 0.3);
+}
+.text-6{
+  position: absolute;
+  top: 200px;
+  left: 830px;
+}
+.filter-6{
+  position: absolute;
+  content: '';
+  width: 32.3%;
+  height: 100%;
+  left: 814px;
+  top: 0;
+  background-color: rgba(0, 71, 255, 0.3);
+}
+
+/* bmi section styles */
+.bmi{
+  padding: 88px 385px;
+}
+
+
+
+
 /* mobile responsive styles */
 
 @media screen and (max-width: 576px) {
@@ -329,5 +452,85 @@ nav ul > li {
     top: 0px;
     left: 0px;
   }
+  /* training styles starts here */
 
+  .training-container{
+    padding: 20px;
+  }
+  .training-info{
+    margin-bottom: 38px;
+  }
+  .section-description br{
+    display: none;
+  }
+  .exercise-img-3{
+    display: none;
+  }
+  .training-img .row-1{
+    position: relative;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .text-1{
+    position: absolute;
+    top: 120px;
+    left: 20px;
+  }
+  .filter-1{
+    position: absolute;
+    content: '';
+    width: 240.5px;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(6, 255, 210, 0.5);
+  }
+
+  .text-2{
+    position: absolute;
+    top: 125px;
+    left: 250px;
+  }
+  .filter-2{
+    position: absolute;
+    content: '';
+    width: 240.5px;
+    height: 100%;
+    left: 240.5px;
+    top: 0;
+    background-color: rgba(255, 0, 0, 0.3);
+  }
+
+  .training-img .row-2{
+    position: relative;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .text-4{
+    position: absolute;
+    left: 10px;
+    top: 120px;
+  }
+  .filter-4{
+    position: absolute;
+    content: '';
+    width: 240.5px;
+    height: 100%;
+    left: 0px;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .text-5{
+    position: absolute;
+    left: 260px;
+    top: 100px;
+  }
+  .filter-5{
+    position: absolute;
+    content: '';
+    width: 240.5px;
+    height: 100%;
+    left: 241px;
+    top: 0;
+    background-color: rgba(66, 255, 0, 0.3);
+  }
 }
