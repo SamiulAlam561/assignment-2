@@ -148,7 +148,7 @@
               </div>
               <img src="asset/exercise2.png" alt="" />
             </div>
-            <div class="img-3 exercise-img-3">
+            <div class="img-3 img-display-none">
               <div class="filter-3"></div>
               <div class="text-3">
                 <p class="training-img-description">Vertical Jump: Works the quadriceps, <br> glutes, calves, and core muscles.</p>
@@ -171,7 +171,7 @@
               </div>
               <img src="asset/exercise5.jpg" alt="" />
             </div>
-            <div class="img-6 exercise-img-3">
+            <div class="img-6 img-display-none">
               <div class="filter-6"></div>
               <div class="text-6">
                 <p class="training-img-description">Sit-Up: Works the abdominals <br> and hip flexors.</p>
@@ -197,6 +197,13 @@
         <div class="bmi-chart">
           <h3 class="bmi-title">BMI Calculator Chart</h3>
           <table>
+            <thead>
+              <tr>
+                <th>BMI</th>
+                <th>Weight Status</th>
+              </tr>
+            </thead>
+
             <tbody>
               <tr>
                 <td>Below 18.5</td>
@@ -221,11 +228,129 @@
           </table>
 
         </div>
-        <div class="calc-bmi"></div>
+        <div class="calc-bmi">
+          <h2 class="bmi-calc-title">Calculate Your BMI</h2>
+          <p class="section-description">
+            A BMI calculator estimates if a person's weight is healthy for their height by calculating Body Mass Index (BMI). It uses weight and height in its formula.
+          </p>
+            <form >
+              <input type="number" placeholder="Height/cm">
+              <input type="number" placeholder="Weight/kG">
+              <input type="number" placeholder="Age">
+              <select>
+                <option id="option-name" value="">Sex</option>
+                <option value="">Male</option>
+                <option value="">Female</option>
+              </select>
+              <select id="exercise-amount">
+                <option id="option-name" value="">
+                  Select an activity factor
+                </option>
+                <option value="">Sedentary - Little or no exercise</option>
+                <option value="">Light - Light exercise/sports 1-3 days per week</option>
+                <option value="">Moderate - Moderate exercise/sports 3 -5 days per week</option>
+                <option value="">Very - Hard exercise/sports 6-7 days per week</option>
+                <option value="">Extra - Extreme hard daily exercise/sports and physical job</option>
+              </select>
+            </form>
+            <button class="btn-primary">Calculate</button>
+        </div>
       </section>
 
+    <!-- meet our team starts here -->
+      <section class="our-team-container">
+        <div class="our-team-info">
+          <h2 class="section-title">Meet Our Team</h2>
+          <p class="section-description">
+            Get to know the friendly faces behind our work. We’re a group of passionate people who love what we do, and we’re excited <br> to share a bit about ourselves with you.
+          </p>
+        </div>
+        <div class="our-team-img-container">
+          <div class="img img-display-none">
+            <div class="bg-color"></div>
+            <div class="text">
+              <h3 class="our-team-img-title">Jerome Bell</h3>
+              <p class="our-team-img-description">Trainer</p>
+            </div>
+            <img src="asset/trainer1.png" alt="">
+          </div>
+          <div class="img">
+            <div class="bg-color"></div>
+            <div class="text">
+              <h3 class="our-team-img-title">Cameron Williamson</h3>
+              <p class="our-team-img-description">Trainer</p>
+            </div>
+            <img src="asset/trainer2.png" alt="">
+          </div>
+          <div class="img">
+            <div class="bg-color"></div>
+            <div class="text">
+              <h3 class="our-team-img-title">Darrell Steward</h3>
+              <p class="our-team-img-description">Trainer</p>
+            </div>
+            <img src="asset/trainer3.png" alt="">
+          </div>
+          <div class="img img-display-none">
+            <div class="bg-color"></div>
+            <div class="text">
+              <h3 class="our-team-img-title">Dianne Russell</h3>
+              <p class="our-team-img-description">Trainer</p>
+            </div>
+            <img src="asset/trainer4.png" alt="">
+          </div>
+          <div class="img">
+            <div class="bg-color"></div>
+            <div class="text">
+              <h3 class="our-team-img-title">Cody Fisher</h3>
+              <p class="our-team-img-description">Trainer</p>
+            </div>
+            <img src="asset/trainer5.png" alt="">
+          </div>
+          <div class="img">
+            <div class="bg-color"></div>
+            <div class="text">
+              <h3 class="our-team-img-title">Theresa Webb</h3>
+              <p class="our-team-img-description">Trainer</p>
+            </div>
+            <img src="asset/trainer6.png" alt="">
+          </div>
+        </div>
+      </section>
     </main>
 
-    <footer></footer>
+    <footer>
+      <!-- fitness section starts here -->
+      <section class="fitness">
+        <div class="fitness-info">
+          <h2 class="fitness-footer-title">Fitness</h2>
+          <p class="section-description">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym. With hundreds of professional workouts.</p>
+        </div>
+
+        <div class="get-started">
+          <h3 class="get-started-title">Get Started</h3>
+          <ul>
+            <li>Service</li>
+            <li>Contact Us</li>
+            <li>Affiliate Program</li>
+            <li>About Us</li>
+          </ul>
+        </div>
+        <div class="get-started">
+          <h3 class="get-started-title">Get Started</h3>
+          <ul>
+            <li>Fitness</li>
+            <li>Platform</li>
+            <li>Workout Libary</li>
+            <li>App Design</li>
+          </ul>
+        </div>
+      </section>
+      <hr>
+      <div class="copyright-text">
+        <small>
+          All rights reserved &#64;Fitness 2024
+        </small>
+      </div>
+    </footer>
   </body>
 </html>
