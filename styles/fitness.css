@@ -28,6 +28,7 @@
   background: #e6533c;
   border: none;
   border-radius: 42px;
+  cursor: pointer;
 }
 body {
   background-color: #000;
@@ -198,6 +199,12 @@ nav ul > li {
   text-align: center;
   gap: 40px;
 }
+.change-img-1,
+.change-img-2,
+.change-img-3,
+.change-img-4{
+  max-width: 230px;
+}
 .change-img-container img {
   border-radius: 50%;
   border: 4px solid #111;
@@ -218,17 +225,13 @@ nav ul > li {
 .run-extra-info {
   padding: 10px;
 }
-.run-extra-img {
-  position: relative;
+
+.run-picture {
   width: 360px;
   height: 310px;
-  overflow: hidden;
+  object-fit: none;
+  object-position: 68% 30%;
   border-radius: 18px;
-}
-.run-picture {
-  position: absolute;
-  top: -200px;
-  left: -780px;
 }
 
 /* training section styles starts here*/
@@ -460,6 +463,71 @@ input::placeholder {
   font-size: .875rem;
   color: rgba(255, 255, 255, 0.5);
 }
+/* services styles starts here */
+
+.services-card-container{
+  display: flex;
+  padding: 80px 190px;
+  gap: 40px;
+  justify-content: center;
+}
+.card-content{
+  transition: all 0.2s ease;
+}
+.card-content:hover{
+  transform: scale(1.1);
+}
+.card-content img{
+  width: 100%;
+  height: auto;
+}
+.card-content{
+  background: rgb(34, 34, 34);
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.card-info{
+  padding: 30px;
+}
+.card-title{
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+.card-price{
+  font-size: 2.5rem;
+  font-weight: 500;
+  padding: 30px 0;
+}
+.card-description{
+  font-size: .875rem;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 30px;
+}
+
+.card-info ul > li{
+  list-style: none;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  font-weight: 400;
+  position: relative;
+}
+.card-info ul li::before{
+  position: absolute;
+  content: '\2713';
+  left: -15px;
+  top: 0;
+}
+.card-info a{
+  padding: 10px 15px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+}
+.card-info .read-more{
+  display: flex;
+  align-items: flex-end;
+}
+
 
 /* footer styles here */
 .fitness{
@@ -595,25 +663,19 @@ footer small{
   }
 
   /* run an extra mile styles here */
+  
   .run-extra-mile-container {
     padding: 20px;
   }
   .run-extra-mile {
     flex-direction: column;
   }
-  .run-extra-img {
-    position: relative;
-    width: 100%;
-    height: 310px;
-    overflow: hidden;
-    border-radius: 18px;
-  }
+  
   .run-picture {
     width: 100%;
     height: 100%;
-    position: absolute;
-    top: 0px;
-    left: 0px;
+    object-fit: cover;
+    border-radius: 18px;
   }
   /* training styles starts here */
 
@@ -728,13 +790,24 @@ footer small{
     padding: 20px;
   }
   .our-team-info{
-    padding: 20px;
-    margin-top: 60px;
+    padding: 20px 20px 0;
+    margin-top: 25px;
     margin-bottom: 0;
   }
   .our-team-img-container{
     grid-template-columns: repeat(1, 1fr);
   }
+
+  /* services styles */
+  .services-info{
+    padding: 20px 20px 0;
+  }
+  .services-card-container{
+    padding: 0px 30px 20px;
+    flex-direction: column;
+  }
+
+
 /* footer styles */
 .fitness{
   flex-direction: column;
